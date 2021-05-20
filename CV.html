@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke Costelloe CV</title>
+    <link rel="stylesheet" href="CV.css" />
+    <script src="CV.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADING BAR -->
+
+    <ul>
+      <li class="LC">Luke Costelloe</li>
+      <li><img class="theselogos" src="images/theselogos.png" /></li>
+      <li><img class="photoshoplogo" src="images/ps.png" /></li>
+      <li>
+        <a href="https://www.instagram.com/luke_costelloe_/?hl=en">Instagram</a>
+      </li>
+      <li>
+        <a href="https://github.com/lukostelloe">GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/luke-costelloe-7a88b7139/"
+          >Linkedin</a
+        >
+      </li>
+      <li><a href="mailto:lukostelloe@gmail.com">Email</a></li>
+    </ul>
+
+    <!-- HEADER -->
+
+    <header class="header">
+      <h1>Luke Costelloe</h1>
+      <p>Développeur Web Junior</p>
+      <p>30 ans, 13 Boulevard Carnot Nice 06300, 0644879902</p>
+    </header>
+    <img class="logo" src="images/logo.PNG" />
+
+    <!-- ABOUT ME -->
+
+    <div class="aboutme">
+      <h2 class="bio">Bio</h2>
+      <p>
+        En reconversion professionnelle, je veux m'insérer sur le long terme
+        dans la filière informatique en France. Mon objectif est de moi ancien
+        au métier de développeur web / web mobile au sein de l'école Simplon à
+        Agréable. Rigoureux, motivé doté d'une grande capacité d'adaptation je
+        suis prêt à m'investir à cent pour cent dans la réussite de mon projet.
+      </p>
+    </div>
+    <img class="face" src="images/myface.PNG" />
+
+    <!-- LANGUAGE PROGRESS -->
+
+    <div class="progress">
+      <h2 class="langues">Langues</h2>
+      <div>
+        <div class="progressbar">
+          <h2>Francais</h2>
+          <progress value="75" max="100"></progress>
+          <h2>Anglais</h2>
+          <progress value="100" max="100"></progress>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE PROFESSIONNELLE -->
+
+    <div class="experpro">
+      <h2 class="experience">Expérience Professionnelle</h2>
+      <p>
+        Juin 2020 - Septembre 2020 Serveur / Barman - DZ , Tallard , Hautes -
+        Alpes
+      </p>
+      <p>Août 2018 - Décembre 2019 Barman - Ma Nolan's , Nice , 06</p>
+      <p>Mars 2017 - Avril 2018 Technicien de laboratoire - NVRL , Dublin</p>
+    </div>
+
+    <div class="competences">
+      <h2 class="compheading">Competences</h2>
+      <p>
+        Maîtrise de l'outil informatique Programmation en JavaScript Service et
+        relations client Capable de travailler au sein d'environnements
+        dynamiques Bilingue en français et en anglais Excellente gestion du
+        temps et très organiser Travail en équipe Créativité Enthousiasme pour
+        le défi
+      </p>
+    </div>
+
+    <!-- SLIDESHOW -->
+
+    <div class="slideshow-container">
+      <h2>Galerie d'Art</h2>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img
+          class="catunderpressure"
+          src="images/cat underpressure.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Cat Under Pressure</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img
+          class="bangdupomme"
+          src="images/bang du pomme.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Bang Du Pomme</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="chairs" src="images/chairs.jpg" style="width: 100%" />
+        <div class="text">Chairs</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="chairs" src="images/dog man.jpg" style="width: 100%" />
+        <div class="text">Dog Man</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!-- QUOTE -->
+
+    <section class="quote">
+      <blockquote class="container">
+        <p>"Some great quote"</p>
+        <cite>satisfied customer</cite>
+        <p>"another quote"</p>
+        <cite>satisfied customer</cite>
+        <p>"yes"</p>
+        <cite>satisfied customer</cite>
+      </blockquote>
+    </section>
+
+    <!-- CONTACT FORM -->
+
+    <div class="questionform">
+      <h3>Souhaitez-vous me contacter?</h3>
+      <form action="/action_page.php">
+        <label for="fname">Prénom</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Votre prénom.."
+        />
+
+        <label for="lname">Nom</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Votre nom.."
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Votre email.."
+        />
+
+        <label for="country">Pays</label>
+        <select id="country" name="country">
+          <option value="france">France</option>
+          <option value="canada">Irland</option>
+          <option value="usa">USA</option>
+          <option value="UK">UK</option>
+          <option value="australie">Australie</option>
+        </select>
+
+        <label for="subject">Matière</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Écris quelque chose.."
+          style="height: 100px"
+          maxlength="500"
+          ;
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Auteur: Luke Costelloe - 2021
+        <a href="mailto:lukostelloe@gmail.com">lukostelloe@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
