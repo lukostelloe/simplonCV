@@ -98,10 +98,14 @@ li a:hover:not(.active) {
 
 .heading {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.face {
+#face {
   width: 150px;
+  float: left;
+  border-radius: 10px;
 }
 /* BIO */
 #bio {
@@ -111,12 +115,11 @@ li a:hover:not(.active) {
 .aboutme {
   display: flex;
   flex-direction: column;
-  max-width: 950px;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-}
-
-.aboutme {
   background-color: #e6f4f8;
+  max-width: 950px;
   width: 90%;
   margin: 40px auto;
   padding: 10px;
@@ -146,6 +149,8 @@ li a:hover:not(.active) {
 .experpro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 950px;
   /* margin: 0 auto; */
   margin-bottom: 10px;
@@ -162,6 +167,8 @@ li a:hover:not(.active) {
 .competences {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 950px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -174,8 +181,66 @@ li a:hover:not(.active) {
 }
 
 /* QUOTE */
+#quotes {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 50px auto;
+  background-color: #e6f4f8;
+  width: 90%;
+}
+
+.faces {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #e6f4f8;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 /* CONTACTFORM */
@@ -284,7 +349,7 @@ footer {
 }
 
 .meter2 {
-  width: 100%;
+  width: 150%;
   height: 10px;
   background: #555;
   border-radius: 25px;

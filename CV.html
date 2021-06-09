@@ -32,12 +32,11 @@
       <p id="headername">Luke Costelloe</p>
       <p>Développeur Web Junior</p>
       <p>30 ans, 13 Boulevard Carnot Nice 06300, 0644879902</p>
-      <img class="face" src="images/myface.PNG" />
     </header>
 
     <div id="grid">
       <div class="aboutme">
-        <h2 class="heading">Bio</h2>
+        <h2 class="heading">A little bit about me</h2>
         <p>
           En reconversion professionnelle, je veux m'insérer sur le long terme
           dans la filière informatique en France. Mon objectif est de moi ancien
@@ -46,6 +45,7 @@
           suis prêt à m'investir à cent pour cent dans la réussite de mon
           projet.
         </p>
+        <img id="face" class="textwrap" src="images/myface.PNG" />
       </div>
 
       <div class="progress">
@@ -90,18 +90,50 @@
       </div>
 
       <section class="quote">
-        <blockquote class="container">
-          <p>"Some great quote"</p>
-          <cite>satisfied customer</cite>
-          <p>"another quote"</p>
-          <cite>another satisfied customer</cite>
-          <p>"yes"</p>
-          <cite>yet another satisfied customer</cite>
-        </blockquote>
+        <h2>Testimonials</h2>
+        <div id="quotes">
+          <div class="faces">
+            <div class="container">
+              <img
+                src="Images/abdiel.jpg"
+                alt="Avatar"
+                class="image"
+                style="width: 50%"
+              />
+              <div class="middle">
+                <div class="text">"I'm so happy with the service!" Abdiel</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img
+                src="Images/dimitri.JPG"
+                alt="Avatar"
+                class="image"
+                style="width: 50%"
+              />
+              <div class="middle">
+                <div class="text">"Luke is the man!" Dimitri</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img
+                src="Images/kevin.png"
+                alt="Avatar"
+                class="image"
+                style="width: 50%"
+              />
+              <div class="middle">
+                <div class="text">"Excellent service, thank you" Kevin</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="questionform">
-        <h3 class="heading">Souhaitez-vous me contacter?</h3>
+        <h2 class="heading">Souhaitez-vous me contacter?</h2>
         <form action="/action_page.php">
           <label for="fname">Prénom</label>
           <input
