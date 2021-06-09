@@ -16,7 +16,7 @@ p {
 
 ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -41,7 +41,26 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: rgb(231, 238, 170);
+  color: black;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.welcomeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: xx-large;
+  margin: 120px;
+  animation: swipe 2s;
+}
+@keyframes swipe {
+  from {
+    right: 100px;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 /* HEADER */
@@ -61,6 +80,11 @@ li a:hover:not(.active) {
   align-items: center;
 }
 
+.header:hover {
+  box-shadow: 1px 1px 50px 10px rgb(138, 145, 146);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 #headername {
   font-size: 40px;
   padding: 10px 10px;
@@ -73,14 +97,6 @@ li a:hover:not(.active) {
   color: white;
   font-size: 30px;
 }
-
-/* .webdev {
-  position: absolute;
-  top: 30px;
-  left: 600px;
-  color: white;
-  font-size: 30px;
-} */
 
 .theselogos {
   width: 100px;
@@ -102,11 +118,6 @@ li a:hover:not(.active) {
   justify-content: center;
 }
 
-#face {
-  width: 150px;
-  float: left;
-  border-radius: 10px;
-}
 /* BIO */
 #bio {
   text-align: center;
@@ -127,6 +138,11 @@ li a:hover:not(.active) {
   font-size: 18px;
 }
 
+.aboutme:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 /* LANGUAGESPROGRESS */
 
 .progress {
@@ -142,6 +158,11 @@ li a:hover:not(.active) {
   width: 90%;
   padding: 10px;
   font-size: 18px;
+}
+
+.progress:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* EXPERPRO */
@@ -162,6 +183,11 @@ li a:hover:not(.active) {
   font-size: 18px;
 }
 
+.experpro:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 /* COMPETENCES */
 
 .competences {
@@ -180,6 +206,11 @@ li a:hover:not(.active) {
   font-size: 18px;
 }
 
+.competences:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 /* QUOTE */
 #quotes {
   display: flex;
@@ -195,6 +226,11 @@ li a:hover:not(.active) {
   margin: 50px auto;
   background-color: #e6f4f8;
   width: 90%;
+}
+
+.quote:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .faces {
@@ -254,6 +290,10 @@ li a:hover:not(.active) {
   justify-content: center;
   align-items: center;
 }
+.questionform:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 input[type="text"],
 select,
@@ -312,8 +352,11 @@ footer {
 }
 
 .meter {
-  width: 150%;
-  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200%;
+  height: 30px;
   background: #555;
   border-radius: 25px;
   padding: 10px;
