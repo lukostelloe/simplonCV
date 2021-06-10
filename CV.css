@@ -201,7 +201,6 @@ li a:hover:not(.active) {
   justify-content: center;
   align-items: center;
   max-width: 950px;
-  margin: 0 auto;
   margin-bottom: 10px;
   background-color: #edf8fc;
   width: 90%;
@@ -209,6 +208,22 @@ li a:hover:not(.active) {
   padding: 10px;
   text-align: left;
   font-size: 18px;
+}
+
+.complogos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.clogos {
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+
+.clogos:hover {
+  box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .competences:hover {
@@ -378,6 +393,13 @@ footer {
   }
 
   .faces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .complogos {
     display: flex;
     flex-direction: column;
     justify-content: center;
