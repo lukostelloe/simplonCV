@@ -13,6 +13,8 @@ p {
   margin: 20px;
 }
 
+/* NAVBAR */
+
 ul {
   display: flex;
   justify-content: space-between;
@@ -26,6 +28,17 @@ ul {
   opacity: 0.8;
   z-index: 500;
   font-size: 18px;
+  animation: swipein 1s;
+}
+
+@keyframes swipein {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 li {
@@ -45,27 +58,30 @@ li a:hover:not(.active) {
   transition: box-shadow 0.3s ease-in;
 }
 
+/* WELCOME LINE */
+
 .welcomeline {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: xx-large;
   margin: 0 auto;
-  padding: 115px;
+  padding: 90px;
   background-color: #fdfdef;
-  animation: swipe 2s;
+  animation: swipe 1s;
 }
 
 .welcomeline:hover {
-  box-shadow: 50px 5px 40px 20px rgb(138, 145, 146);
+  box-shadow: 50px 5px 35px 15px rgb(138, 145, 146);
   transition: box-shadow 0.3s ease-in-out;
 }
 @keyframes swipe {
   from {
-    right: 100px;
+    transform: translateX(100%);
   }
+
   to {
-    right: 0px;
+    transform: translateX(0%);
   }
 }
 
@@ -84,34 +100,21 @@ li a:hover:not(.active) {
   font-size: 30px;
   text-shadow: 2px 2px black;
   align-items: center;
+  animation: appear 3s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header:hover {
   box-shadow: 1px 1px 50px 10px rgb(138, 145, 146);
   transition: box-shadow 0.3s ease-in-out;
-}
-
-#headername {
-  font-size: 40px;
-  padding: 10px 10px;
-}
-
-.name {
-  position: absolute;
-  top: 10px;
-  left: 600px;
-  color: white;
-  font-size: 30px;
-}
-
-.theselogos {
-  width: 100px;
-  margin: 0 auto;
-}
-
-.photoshoplogo {
-  width: 30px;
-  margin: 0 auto;
 }
 
 .LC {
@@ -125,9 +128,6 @@ li a:hover:not(.active) {
 }
 
 /* BIO */
-#bio {
-  text-align: center;
-}
 
 .aboutme {
   display: flex;
@@ -135,7 +135,7 @@ li a:hover:not(.active) {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   max-width: 950px;
   width: 90%;
   margin: 40px auto;
@@ -160,7 +160,7 @@ li a:hover:not(.active) {
   max-width: 950px;
   margin: 0 auto;
   margin-bottom: 10px;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   width: 90%;
   padding: 10px;
   font-size: 18px;
@@ -179,9 +179,8 @@ li a:hover:not(.active) {
   justify-content: center;
   align-items: center;
   max-width: 950px;
-  /* margin: 0 auto; */
   margin-bottom: 10px;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   width: 90%;
   margin: 50px auto;
   padding: 10px;
@@ -198,13 +197,13 @@ li a:hover:not(.active) {
 
 .competences {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 950px;
   margin: 0 auto;
   margin-bottom: 10px;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   width: 90%;
   margin: 50px auto;
   padding: 10px;
@@ -217,7 +216,8 @@ li a:hover:not(.active) {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* QUOTE */
+/* TESTIMONIALS */
+
 #quotes {
   display: flex;
   flex-direction: row-reverse;
@@ -230,7 +230,7 @@ li a:hover:not(.active) {
   align-items: center;
   text-align: center;
   margin: 50px auto;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   width: 90%;
 }
 
@@ -279,16 +279,17 @@ li a:hover:not(.active) {
 }
 
 .text {
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   color: black;
   font-size: 16px;
   padding: 16px 32px;
 }
 
 /* CONTACTFORM */
+
 .questionform {
   display: grid;
-  background-color: #e6f4f8;
+  background-color: #edf8fc;
   padding: 20px;
   width: 90%;
   margin: 0 auto;
@@ -349,89 +350,22 @@ footer {
   justify-content: center;
   margin: 0 auto;
   background-color: #333;
-  height: 60px;
+  height: auto;
   color: silver;
   border-top: solid 2px gray;
-  padding: 8px;
+  padding: auto;
   font-size: 18px;
   text-align: center;
 }
 
-.meter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200%;
-  height: 30px;
-  background: #555;
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+.htmlcssjs {
+  width: 100px;
+  margin: 0 auto;
 }
 
-.meter > span {
-  display: flex;
-  height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(43, 194, 83);
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43, 194, 83) 37%,
-    rgb(84, 240, 84) 69%
-  );
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  animation: growth 5s;
-}
-
-@keyframes growth {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 80%;
-  }
-}
-
-.meter2 {
-  width: 150%;
-  height: 10px;
-  background: #555;
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-}
-
-.meter2 > span {
-  display: flex;
-  height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(43, 194, 83);
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43, 194, 83) 37%,
-    rgb(84, 240, 84) 69%
-  );
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  animation: growth2 5s;
-}
-
-@keyframes growth2 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+.photoshoplogo {
+  width: 30px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -443,6 +377,13 @@ footer {
     text-align: center;
   }
 
+  .faces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -450,4 +391,17 @@ footer {
     justify-content: center;
     text-align: center;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 5 5 10px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #edf8fc;
+  outline: 1px solid rgb(44, 103, 163);
 }
