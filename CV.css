@@ -237,7 +237,7 @@ li a:hover:not(.active) {
 
 .competences:hover {
   box-shadow: 1px 1px 50px 10px rgb(188, 195, 196);
-  transition: box-shadow 2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* TESTIMONIALS */
