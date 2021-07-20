@@ -1,1 +1,1 @@
-http://lukostelloe.github.io/simplonCV/
+https://lukostelloe.github.io/simplonCV/
